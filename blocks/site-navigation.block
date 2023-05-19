@@ -1,11 +1,11 @@
-<div style="border: 1px solid red; padding: 25px;">
-<a href="/" class="site-title-link">{website.siteTitle}</a>
-<p>{website.siteTagline}</p>
-</div>
 
-
+<a href="/" class="site-title-link hover">{website.siteTitle}</a>
+<p class="site-tagline">{website.siteTagLine}</p>
+<div class="spacer"></div>
 <nav class="site-navigation">
+
   <ul class="site-navigation-list">
+  <li><a href="/"><img src="../assets/home.png" class="nav-icon hover"/></a></li>
     {.repeated section items}
 
       <li class="site-navigation-item {.section active} active-link{.end}">
@@ -25,5 +25,9 @@
       </li>
 
     {.end}
+    
+    <li style="margin-top: 15px;"><a class="button outline-button" href="/contact">Contact Corey</a>
   </ul>
 </nav>
+
+
