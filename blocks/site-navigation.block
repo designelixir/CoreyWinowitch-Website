@@ -1,3 +1,9 @@
+<div style="border: 1px solid red; padding: 25px;">
+<a href="/" class="site-title-link">{website.siteTitle}</a>
+<p>{website.siteTagline}</p>
+</div>
+
+
 <nav class="site-navigation">
   <ul class="site-navigation-list">
     {.repeated section items}
