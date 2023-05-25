@@ -19,7 +19,7 @@
               <p class="site-tagline">{website.siteTagLine}</p>
             </div>
             
-            <li id="contact-btn-mobile" style="margin-top: 15px;"><a class="button outline-button" href="/about#contact-form">Contact</a>
+            <li id="contact-btn-mobile" style="margin-top: 15px;"><a class="button outline-button" href="/about#contactForm">Contact</a>
             
           </div>
           <div class="wide-nav">
@@ -41,7 +41,7 @@
        
 
       </main>
-      <squarespace:block-field id="contactBlocks" columns="12" />
+      <squarespace:block-field id="contactForm" class="basic-padding bottom-box-shadow" columns="12" />
 
       
 
