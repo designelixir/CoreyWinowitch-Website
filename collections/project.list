@@ -4,14 +4,27 @@
 </div>
 <div class="spacer"></div>
 <squarespace:block-field id="projectText" columns="12" />
+<!--TAGS-->
+{.section tagFilter}
+  <p class="filtered-by">Filtered by: {@|safe}</p>
+{.end}
+{.section collection}
+<div style="margin-top: 10px">
+{.repeated section tags}
+      <span class="tag">{@}</span>
+      {.end}
+    {.end}
+</div>
 <div class="spacer"></div>
 <!-- item loop -->
+<div class="project-grid flex-start-start">
 {.repeated section items}
 
 <div class="project-grid-item flex-end-center hover" onclick="window.open('{fullUrl}', '_self')" style="background-image: url({assetUrl})">
-<h2 class="title" data-content-field="title">
+<h2 class="grid-title" data-content-field="title">
       {title}
     </h2>
 </div>
 
 {.end}
+</div>

@@ -10,7 +10,7 @@ p {font-weight: 200; font-size: 16px; line-height: 22px;}
 .hover:hover {transform: scale(1.01); cursor: pointer;}
 .spacer {height: 50px;}
 .hover:hover {transform: scale(1.05); cursor: pointer;}
-.button {padding: 5px 15px; border-radius: 6px; margin: 15px 0px; font-size: 16px; font-weight: 200; text-decoration: none!important;}
+.button {padding: 5px 15px; border-radius: 6px; font-size: 16px; font-weight: 200; text-decoration: none!important;}
 .outline-button {border: 1px solid black;}
 .outline-button:hover {border: 2px solid black; font-weight: 400;}
 
@@ -20,6 +20,7 @@ p {font-weight: 200; font-size: 16px; line-height: 22px;}
 .flex-center-spacebetween {display: flex; align-items: center; justify-content: space-between;}
 .flex-end-center {display: flex; align-items: flex-end; justify-content: center;}
 .flex-start-center {display: flex; align-items: flex-start; justify-content: center;}
+.flex-center-start {display: flex; align-items: center; justify-content: flex-start;}
 .flex-column {flex-direction: column;}
 .flex-wrap {flex-wrap: wrap;}
 .flex-start-spacebetween {display: flex; align-items: flex-start; justify-content: space-between;}
@@ -52,6 +53,8 @@ p {font-weight: 200; font-size: 16px; line-height: 22px;}
   .wide-nav-container {
     flex-wrap: wrap;
   }
+  .footer-contents {flex-wrap: wrap;}
+  .footer-text {width: 100%; text-align: center;}
   .nav-title {margin-bottom: 15px;}
   #contact-btn-mobile {display: block;}
   #contact-btn {display: none;}
@@ -81,13 +84,44 @@ p {font-weight: 200; font-size: 16px; line-height: 22px;}
   background-size: cover; background-repeat: no-repeat; height: 40vh; border-radius: 6px;
 }
 .page-mini-hero h1 {color: white;}
-.project-grid-item {border-radius: 6px; padding: 0 25px 50px; background-size: cover; background-repeat: no-repeat; width: 250px; height: 250px; text-align: center; color: white;}
-.project-grid-item {text-shadow: 0px 0px 3px black;}
-.project-title {font-size: 48px;}
+.project-grid {margin-left: -10px; flex-wrap: wrap;}
+.project-grid-item {border-radius: 6px; padding: 0 25px 50px; background-size: cover; background-repeat: no-repeat; width: 30vw; height: 30vw;  text-align: center; color: white; margin: 10px;}
+.grid-title {text-shadow: 0px 0px 3px black;}
+.project-title {font-size: 48px; }
 .project-description {width: 100%; max-width: 650px;}
+
+@media screen and (max-width: 1000px) {
+  .project-grid-item {width: 45%; height: 42vw;  min-width: unset; min-height: unset;}
+}
+
 
 #project-gallery {width: 4000px; overflow-y: hidden!important; flex-wrap: wrap; overflow-x: scroll!important; padding: 0px 0px 15px;}
 .project-gallery-image {max-height: 40vh; width: auto; margin: 15px 15px 0px 0px}
 .project-gallery-image:hover {cursor: pointer; transform: scale(1.01)}
 #lightbox {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(255,255,255,0.5); z-index: 30000; backdrop-filter: blur(5px);}
 .lightbox-contents {width: 100%; max-height: 80vw;}
+
+.tag {background: black; opacity: 0.85; padding: 5px 10px; font-size: 12px; color: white; margin: 0px 5px 0px 0px; border-radius: 15px;}
+
+.form-wrapper .react-form-contents .field-list .field {
+  margin: 0 0 18px;
+  min-width: 48%;
+}
+
+.field:last-child {
+  
+  width: 100%!important;
+}
+
+.form-wrapper .field-list {
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-text {min-width: 300px;}
+
+.eTv7qUMqLR9lJxpIAC3F {height: 35px!important;}
+.title.ORJvfAX1j_0GYzxaesgd {font-size: 14px;}
+.form-wrapper .field-list textarea {min-height: 75px;}

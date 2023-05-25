@@ -29,8 +29,19 @@
 
     
     <h1 class="project-title">{title}</h1>
+    <div class="flex-center-start">
+    <p style="color: gray; padding-right: 10px;"><time datetime="{addedOn|date %F}">{addedOn|date %B %Y}</time></p>
+
+    
+    </div>
+    <br>
     <div class="project-description">
         <p>{body}</p>
+        <br>
+        <!--TAGS-->
+    {.repeated section tags}
+      <span class="tag">{@}</span>
+    {.end}
     </div>
     <div class="spacer"></div>
     <div style="overflow-x: scroll!important; width: 100%;">
@@ -56,11 +67,7 @@
       <a class="category" href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with},
     {.end}
 
-    <!--TAGS-->
-    {.repeated section tags}
-      <a class="tag" href="{collection.fullUrl}?tag={@|url-encode}">{@}</a>{.alternates with},
-    {.end}
-
+    
 
     <!--COMMENTS-->
     {@|comments}
