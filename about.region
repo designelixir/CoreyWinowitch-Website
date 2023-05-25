@@ -27,11 +27,18 @@
           </div>
         </header>
       <!-- cms content injection point -->
+      
 
       <main class="content-container" role="main" data-content-field="main-content">
        
        {squarespace.main-content}
       </main>
+      <div class="basic-padding flex-center-center">
+        <img src="{collection.mainImage.assetUrl}"/>
+        <div style="border: 1px solid lime; min-width: 100px">
+            <squarespace:block-field id="aboutText" columns="12" />
+        </div>
+      </div>
       
 
       
