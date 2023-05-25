@@ -41,28 +41,10 @@
         <squarespace:block-field id="aboutText" columns="12" />
         
       </div>
+      <squarespace:block-field id="contactForm" class="basic-padding bottom-box-shadow" columns="12" />
     </div>
     <!--Footer with open block field -->
-      <footer class="site-footer basic-padding top-box-shadow" >
-      <div class="flex-center-spacebetween footer-contents">
-        <div class="footer-text">
-          <a href="/" class="site-title-link hover">{website.siteTitle}</a>
-          <p class="site-tagline">{website.siteTagLine}</p>
-          <br>
-          <squarespace:block-field id="footerSocial" columns="12" />
-          <br>
-          <hr>
-          <br>
-          <p>Copyright &copy; Corey Winowitch 2023</p>
-          <a id="de-tag" href="https://designelixir.studio/" target="_blank">Made with &hearts; by Design Elixr </a>
-        </div>
-        <squarespace:block-field id="contactForm" class="basic-padding bottom-box-shadow" columns="12" />
-        </div>
-        <div class="footer-copyright basic-padding" >
-          
-          
-        </div>
-        </footer>
+      {@|apply footer.block}
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
