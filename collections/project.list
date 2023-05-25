@@ -1,4 +1,5 @@
 
+<p>Something</p>
 {.section categoryFilter}
   <p class="filtered-by">Filtered by Category: {@|safe}</p>
 {.end}
