@@ -21,7 +21,7 @@
       </li>
 
     {.end}
-    <li id="contact-btn"><a class="button outline-button" href="/contact">Contact Corey</a>
+    <li id="contact-btn"><a class="button outline-button" href="/about#contact-form">Contact Corey</a>
     
   </ul>
 </nav>
