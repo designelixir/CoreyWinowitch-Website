@@ -42,13 +42,7 @@
       
     </div>
     <!--Footer with open block field -->
-      <footer class="site-footer basic-padding top-box-shadow" >
-        <squarespace:block-field id="footerSocial" columns="12" />
-        <div class="footer-copyright basic-padding" >
-          <p>Copyright &copy; Corey Winowitch 2023</p>
-          <a id="de-tag" href="https://designelixir.studio/" target="_blank">Made with &hearts; by Design Elixr </a>
-        </div>
-        </footer>
+      {@|apply footer.block}
 
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
