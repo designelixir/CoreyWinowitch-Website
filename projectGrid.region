@@ -27,6 +27,10 @@
           </div>
         </header>
       <!-- cms content injection point -->
+        <div class="page-mini-hero flex-center-center" style="background-image: url({collection.mainImage.assetUrl})">
+            <h1>Architectural Portfolio</h1>
+        </div>
+
 
       <main class="content-container" role="main" data-content-field="main-content">
        
