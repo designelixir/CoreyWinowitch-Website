@@ -27,13 +27,12 @@
           </div>
         </header>
       <!-- cms content injection point -->
-        <div class="page-mini-hero flex-center-center" style="background-image: url({collection.mainImage.assetUrl})">
+        <div class="page-mini-hero flex-end-center large-padding" style="background-image: url({collection.mainImage.assetUrl})">
             <h1>Architectural Portfolio</h1>
         </div>
 
 
-      <main class="content-container" role="main" data-content-field="main-content">
-       
+      <main class="content-container basic-padding" role="main" data-content-field="main-content">
        {squarespace.main-content}
       </main>
       
@@ -41,7 +40,7 @@
       
       
 
-      <squarespace:block-field id="contactForm" class="basic-padding bottom-box-shadow" columns="12" />
+      
     </div>
     <!--Footer with open block field -->
       <footer class="site-footer basic-padding top-box-shadow" >
