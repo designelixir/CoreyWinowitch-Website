@@ -24,16 +24,8 @@
       
 
       <!-- cms content injection point -->
-      <main class="content-container" id="homepage-main" role="main" data-content-field="main-content">
+      <main class="content-container" role="main" data-content-field="main-content">
        {squarespace.main-content}
-       <div class="flex-start-start flex-column">
-            <div style="height: 50vh;" class="flex-center-center">
-            
-            </div>
-            <div style="height: 50vh;" class="flex-center-center">
-            
-            </div>
-       </div>
 
       </main>
 
