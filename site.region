@@ -28,17 +28,13 @@
         </header>
       <!-- cms content injection point -->
 
-      <main class="content-container basic-padding" role="main" data-content-field="main-content">
+      <main class="content-container" role="main" data-content-field="main-content">
        
        {squarespace.main-content}
       </main>
+      
 
-<div >
-        <div style="background-image: url({collection.mainImage.assetUrl}); border: 1px solid red; background-size: cover; background-repeat: no-repeat; height: 40vw; width: 40vw;"></div>
-              <squarespace:block-field id="aboutSection" columns="12" style="min-width: 50px; border: 1px solid lime;" />
-
-
-      </div>
+      
       
 
       <squarespace:block-field id="contactForm" class="basic-padding bottom-box-shadow" columns="12" />
