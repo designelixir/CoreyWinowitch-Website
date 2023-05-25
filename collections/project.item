@@ -44,7 +44,12 @@
     {.end}
     </div>
     <div class="spacer"></div>
-    <div style="overflow-x: scroll!important; width: 100%;">
+    <div style="overflow-x: scroll!important; width: 100%;" id="project-gallery-wrapper">
+    <div id="project-arrow" >
+        <div class="flex-center-center" style="height: 100%; " onclick="scroll()" >
+            <p>&rarr;</p>
+        </div>
+    </div>
         <div id="project-gallery" class="flex-start-start">
         {.repeated section items}
             <img src="{assetUrl}" class=" project-gallery-image" onclick="Lightbox('{assetUrl}?format=original)')" >
@@ -98,6 +103,12 @@ function Lightbox(url){
         document.getElementById('lightbox').style.display = "block";
         document.getElementById('lightbox-image').setAttribute("src", url)
     }
+    
+}
+
+function scroll(){
+    console.log("clicky")
+    document.getElementById("project-gallery").scrollLeft = -150;
     
 }
 </script>
