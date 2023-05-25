@@ -31,7 +31,7 @@
       <main class="content-container basic-padding" role="main" data-content-field="main-content">
        <div class="flex-start-start">
         <div style="background-image: url({collection.mainImage.assetUrl}); border: 1px solid red; background-size: cover; background-repeat: no-repeat; height: 40vw; width: 40vw;"></div>
-              <squarespace:block-field id="aboutSection" columns="12" />
+              <squarespace:block-field id="aboutSection" columns="12" style="min-width: 50px; border: 1px solid lime;" />
 
 
       </div>
