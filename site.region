@@ -48,13 +48,7 @@
     </div>
     <!--Footer with open block field -->
       <footer class="site-footer basic-padding top-box-shadow" >
-        <div class="flex-center-spacebetween">
-        <div class="nav-title">
-              <a href="/" class="site-title-link hover">{website.siteTitle}</a>
-              <p class="site-tagline">{website.siteTagLine}</p>
-            </div>
-            <squarespace:block-field id="footerBlocks" columns="12" />
-        </div>
+        <squarespace:block-field id="footerSocial" columns="12" />
         <div class="footer-copyright basic-padding" >
           <p>Copyright &copy; Corey Winowitch 2023</p>
           <a id="de-tag" href="https://designelixir.studio/" target="_blank">Made with &hearts; by Design Elixr </a>
