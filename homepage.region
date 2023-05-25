@@ -13,6 +13,9 @@
 
     <div class="site-container flex-start-start">
         <div class="navigation-side-bar flex-spacebetween-start">
+        <a href="/" class="site-title-link hover">{website.siteTitle}</a>
+        <p class="site-tagline">{website.siteTagLine}</p>
+        <div class="spacer"></div>
         <header class="site-header">
             <squarespace:navigation navigationId="siteNav" template="site-navigation" />
         </header>

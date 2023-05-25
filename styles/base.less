@@ -15,8 +15,10 @@ h1, h2, h3, h4, h5, h6, p, a {margin: 0;}
 .flex-start-start {display: flex; align-items: flex-start; justify-content: flex-start;}
 .flex-spacebetween-start {display: flex; align-items: space-between; justify-content: flex-start; flex-direction: column;;}
 .flex-center-center {display: flex; align-items: center; justify-content: center;}
+.flex-center-spacebetween {display: flex; align-items: center; justify-content: space-between;}
 .flex-column {flex-direction: column;}
-
+.flex-start-spacebetween {display: flex; align-items: flex-start; justify-content: space-between;}
+.bottom-box-shadow {box-shadow: 0px 3px 3px rgba(0,0,0,0.25);}
 // Header Nav
 .navigation-side-bar { max-width: 325px; width: 100%; height: 100vh; padding: 25px;}
 
@@ -28,10 +30,22 @@ h1, h2, h3, h4, h5, h6, p, a {margin: 0;}
 .nav-icon {height: 20px;}
 .site-navigation-list {margin: 0; padding: 0;}
 .site-navigation-list li {list-style-type: none; margin: 5px; font-size: 14px;}
-
+#contact-btn-mobile {display: none;}
+#contact-btn {min-width: 140px;}
 .site-footer {height: 10vh; }
 .site-footer a {color: gray; font-weight: 300;}
 
+.wide-nav-container {padding: 25px;}
+.wide-nav nav ul {display: flex; align-items: center; justify-content: center;}
+
+@media screen and (max-width: 750px) {
+  .wide-nav-container {
+    flex-wrap: wrap;
+  }
+  .nav-title {margin-bottom: 15px;}
+  #contact-btn-mobile {display: block;}
+  #contact-btn {display: none;}
+}
 
 // homepage
 #homepage-main {width: 100%; height: 100vh; }
