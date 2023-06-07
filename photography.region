@@ -37,7 +37,7 @@
         <div class="category-bar">
         <div style="position: absolute">
             {.section collection}
-                <squarespace:category collection="646714a22e91037dad970b77">
+                <squarespace:category collection="photography-shop">
                     {.if categories}
                     <h3>Categories</h3>
                     <ul>
