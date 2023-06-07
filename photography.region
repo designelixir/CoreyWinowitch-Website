@@ -33,10 +33,10 @@
             <h1>{collection.navigationTitle}</h1>
        </div>
       <main class="content-container basic-padding" role="main" data-content-field="main-content">
-       <p class="text-padding">Purchase prints of my photography below. Choose from different sizes and print styles. You can filter my photos by type, just click the category below. </p>
+       
        <div class="flex-center-center">
         
-        <squarespace:category collection="{urlId}" template="category-slugs" />
+        
         
         {.section collection}
             <squarespace:category collection="{urlId}">
@@ -52,6 +52,14 @@
             </squarespace:category>
         {.end}
        </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("a.ProductItem-nav-breadcrumb-link").html(function() { 
+          return $(this).html().replace("All Services", "All Categories");  
+    });
+});
+</script>
        {squarespace.main-content}
       </main>
       
