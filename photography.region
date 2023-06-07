@@ -27,33 +27,30 @@
           </div>
         </header>
       <!-- cms content injection point -->
-        
-
         <div class="flex-center-center background page-title" style="background-image: url({collection.mainImage.assetUrl})">
-            <h1>{collection.navigationTitle}</h1>
-            <p>{collection.pageDescription}</p>
+       <h1>{collection.navigationTitle}</h1>
        </div>
-       <div class="flex-start-spacebetween basic-padding">
-        <div class="category-bar">
-        <div style="position: absolute">
-            {.section collection}
-                <squarespace:category collection="photography-shop">
-                    {.if categories}
-                    <h3>Categories</h3>
-                    <ul>
-                        
-                        {.repeated section categories}
-                        <li><a href="/photography/?category={name}&p" target="_blank">{name}</a></li>
-                        {.end}
+       <p class="text-padding" style="text-align: center">Filter the images below by category. Each of my photos is available in various sizes and different print options, including canvas, metal and Giclee paper. </p>
+       <div class="flex-center-center">
+        
+        
+        
+        {.section collection}
+            <squarespace:category collection="photography-shop">
+                {.if categories}
+                <div class="category-wrapper flex-center-center flex-wrap">
                     
-                    </ul>
+                    {.repeated section categories}
+                    <div class="category hover"><a href="/photography/?category={name}&p" target="_blank">{name}</a></div>
                     {.end}
-                </squarespace:category>
-            {.end}
-            </div>
-        </div>
-
-       <div class="content-container" role="main" data-content-field="main-content" style="width: 90vw;">
+                
+                </div>
+                {.end}
+            </squarespace:category>
+        {.end}
+       </div>
+        <div class="spacer"></div>
+       <div class="content-container basic-padding" role="main" data-content-field="main-content">
        {squarespace.main-content}
       </div>
     

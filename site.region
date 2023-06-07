@@ -27,11 +27,30 @@
           </div>
         </header>
       <!-- cms content injection point -->
-
-      <main class="content-container" role="main" data-content-field="main-content">
-       <div class="flex-center-center background page-title" style="background-image: url({collection.mainImage.assetUrl})">
+      <div class="flex-center-center background page-title" style="background-image: url({collection.mainImage.assetUrl})">
        <h1>{collection.navigationTitle}</h1>
        </div>
+       <p class="text-padding" style="text-align: center">Filter the images below by category. Each of my photos is available in various sizes and different print options, including canvas, metal and Giclee paper. </p>
+       <div class="flex-center-center">
+        
+        
+        
+        {.section collection}
+            <squarespace:category collection="photography-shop">
+                {.if categories}
+                <div class="category-wrapper flex-center-center flex-wrap">
+                    
+                    {.repeated section categories}
+                    <div class="category hover"><a href="/photography/?category={name}&p" target="_blank">{name}</a></div>
+                    {.end}
+                
+                </div>
+                {.end}
+            </squarespace:category>
+        {.end}
+       </div>
+      <main class="content-container basic-padding" role="main" data-content-field="main-content">
+       
        {squarespace.main-content}
       </main>
       
