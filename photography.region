@@ -40,8 +40,8 @@
           });
           
           </script>
-          <div id="photographyDescription">
-           <squarespace:block-field id="photographyText" class="basic-padding" columns="12" />
+          <div id="photographyDescription" class="basic-padding">
+           <squarespace:block-field id="photographyText" columns="12" />
             <div class="flex-center-center category-container" id="category-container">
               {.section collection}
                   <squarespace:category collection="photography">
