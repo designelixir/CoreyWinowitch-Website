@@ -27,35 +27,35 @@
         <div class="flex-center-center background page-title" style="background-image: url({collection.mainImage.assetUrl})">
        <h1>{collection.navigationTitle}</h1>
        </div>
-       <squarespace:block-field id="photographyText" class="basic-padding" columns="12" />
+      
        <script>
           document.addEventListener('DOMContentLoaded', function() {
               if ( document.querySelector("#productWrapper") ) {
-                  document.getElementById('category-container').style.display = "none"
-                  document.getElementById('photographyText').style.display = "none"
+                  
+                  document.getElementById('photographyDescription').style.display = "none"
               } else {
-                document.getElementById('category-container').style.display = "block"
-                  document.getElementById('photographyText').style.display = "block"
+                
+                  document.getElementById('photographyDescription').style.display = "block"
               }
           });
           </script>
-       <div class="flex-center-center category-container" id="category-container">
-        
-        
-        
-        {.section collection}
-            <squarespace:category collection="photography">
-                {.if categories}
-                <div class="category-wrapper flex-center-center flex-wrap">
-                    
-                    {.repeated section categories}
-                    <div class="category hover"><a href="/photography/?category={name}" target="_blank">{name}</a></div>
-                    {.end}
-                
-                </div>
-                {.end}
-            </squarespace:category>
-        {.end}
+          <div id="photographyDescription">
+           <squarespace:block-field id="photographyText" class="basic-padding" columns="12" />
+            <div class="flex-center-center category-container" id="category-container">
+              {.section collection}
+                  <squarespace:category collection="photography">
+                      {.if categories}
+                      <div class="category-wrapper flex-center-center flex-wrap">
+                          
+                          {.repeated section categories}
+                          <div class="category hover"><a href="/photography/?category={name}" target="_blank">{name}</a></div>
+                          {.end}
+                      
+                      </div>
+                      {.end}
+                  </squarespace:category>
+              {.end}
+            </div>
        </div>
         <div class="spacer"></div>
        <div class="content-container basic-padding" role="main" data-content-field="main-content">
