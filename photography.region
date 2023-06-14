@@ -39,7 +39,7 @@
               }
           });
           </script>
-       <div class="flex-center-center category-container">
+       <div class="flex-center-center category-container" id="category-container">
         
         
         
