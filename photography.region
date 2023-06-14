@@ -28,6 +28,17 @@
        <h1>{collection.navigationTitle}</h1>
        </div>
        <squarespace:block-field id="photographyText" class="basic-padding" columns="12" />
+       <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              if ( document.querySelector("#productWrapper") ) {
+                  document.getElementById('category-container').style.display = "none"
+                  document.getElementById('photographyText').style.display = "none"
+              } else {
+                document.getElementById('category-container').style.display = "block"
+                  document.getElementById('photographyText').style.display = "block"
+              }
+          });
+          </script>
        <div class="flex-center-center category-container">
         
         
