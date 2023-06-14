@@ -1,9 +1,7 @@
 <nav class="site-navigation">
   <ul class="site-navigation-list">
-  <li><a href="/"><img src="../assets/home.png" class="nav-icon hover"/></a></li>
-  
+  <li><a href="/"><img src="../assets/home.png" class="nav-icon hover" alt="home icon"/></a></li>
     {.repeated section items}
-
       <li class="site-navigation-item {.section active} active-link{.end}">
 
         <!-- collection link -->
@@ -19,10 +17,8 @@
         {.end}
 
       </li>
-
     {.end}
-    <li id="contact-btn"><a class="button outline-button" href="/about#contactForm">Contact Corey</a>
-    
+    <li id="contact-btn"><a class="button outline-button" href="/about#contactForm">Contact</a>
   </ul>
 </nav>
 
