@@ -31,13 +31,14 @@
        <script>
           document.addEventListener('DOMContentLoaded', function() {
               if ( document.querySelector("#productWrapper") ) {
-                  
+                  document.getElementById('productNav').classList = "button outlinebutton"
                   document.getElementById('photographyDescription').style.display = "none"
               } else {
                 
                   document.getElementById('photographyDescription').style.display = "block"
               }
           });
+          
           </script>
           <div id="photographyDescription">
            <squarespace:block-field id="photographyText" class="basic-padding" columns="12" />
