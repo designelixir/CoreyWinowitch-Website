@@ -27,13 +27,13 @@
         <div class="flex-center-center background page-title" style="background-image: url({collection.mainImage.assetUrl})">
        <h1>{collection.navigationTitle}</h1>
        </div>
-       <p class="text-padding" style="text-align: center">Filter the images below by category. Each of my photos is available in various sizes and different print options, including canvas, metal and Giclee paper. </p>
-       <div class="flex-center-center">
+       <squarespace:block-field id="photographyText" class="basic-padding" columns="12" />
+       <div class="flex-center-center category-container">
         
         
         
         {.section collection}
-            <squarespace:category collection="photography-shop">
+            <squarespace:category collection="photography">
                 {.if categories}
                 <div class="category-wrapper flex-center-center flex-wrap">
                     
