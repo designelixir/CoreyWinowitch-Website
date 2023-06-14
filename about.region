@@ -13,13 +13,13 @@
 
     <div class="site-container">
         <header class="flex-center-spacebetween wide-nav-container bottom-box-shadow">
-          <div class="flex-start-spacebetween" style="width: 100vw;">
+          <div class="flex-center-spacebetween" style="width: 100vw;">
             <div class="nav-title">
               <a href="/" class="site-title-link hover">{website.siteTitle}</a>
               <p class="site-tagline">{website.siteTagLine}</p>
             </div>
             
-            <li id="contact-btn-mobile" style="margin-top: 15px;"><a class="button outline-button" href="/about#contactForm">Contact</a>
+            
             
           </div>
           <div class="wide-nav">

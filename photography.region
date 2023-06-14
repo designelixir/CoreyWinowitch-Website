@@ -18,9 +18,6 @@
               <a href="/" class="site-title-link hover">{website.siteTitle}</a>
               <p class="site-tagline">{website.siteTagLine}</p>
             </div>
-            
-            <li id="contact-btn-mobile" style="margin-top: 15px;"><a class="button outline-button" href="/about#contactForm">Contact</a>
-            
           </div>
           <div class="wide-nav">
             <squarespace:navigation navigationId="siteNav" template="site-navigation" />
@@ -41,7 +38,7 @@
                 <div class="category-wrapper flex-center-center flex-wrap">
                     
                     {.repeated section categories}
-                    <div class="category hover"><a href="/photography/?category={name}&p" target="_blank">{name}</a></div>
+                    <div class="category hover"><a href="/photography/?category={name}" target="_blank">{name}</a></div>
                     {.end}
                 
                 </div>

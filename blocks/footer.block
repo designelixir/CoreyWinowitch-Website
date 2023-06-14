@@ -5,7 +5,7 @@
           <p class="site-tagline">{website.siteTagLine}</p>
           <squarespace:block-field id="footerSocial" columns="12" />
         </div>
-        <div style="border-left: 1px solid gray; padding: 25px; height: 100px;"></div>
+        <div class="footer-break-line"></div>
         <div>
           <squarespace:block-field id="contactFormButton" class="basic-padding" columns="12" />
         </div>  

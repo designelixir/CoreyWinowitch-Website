@@ -47,9 +47,10 @@
     <div style="overflow-x: scroll!important; width: 100%;" id="project-gallery-wrapper">
     <div id="project-arrow" >
         <div class="flex-center-center" style="height: 100%; " onclick="scroll()" >
-            <p>&rarr;</p>
+            <p style="font-size: 24px;">&rarr;</p>
         </div>
     </div>
+    <p style="text-align: center; font-style: italic; font-size: 12px;">Click to enlarge images</p>
         <div id="project-gallery" class="flex-start-start">
         {.repeated section items}
             <img src="{assetUrl}" class=" project-gallery-image" onclick="Lightbox('{assetUrl}?format=original)')" >
@@ -57,7 +58,7 @@
         </div>
     </div>
     
-    <p style="text-align: center;">Click to enlarge images</p>
+    
 
   <!--WRAPPER-->
   <div id="post-{id}" class="{@|item-classes}" data-item-id="{id}">

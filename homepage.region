@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
     {squarespace-headers}
   </head>
   <style>
@@ -37,8 +38,8 @@
       max-height: 50vh;
     }
     @media screen and (max-width: 750px) {
-      .sqs-image-shape-container-element {height: 38vh}
-      
+      .sqs-image-shape-container-element {height: 35vh}
+      .sqs-dynamic-text p {font-size: 32px;}
   
 }
 </style>
@@ -47,18 +48,23 @@
     <div class="site-container flex-start-start homepage-container">
         <div class="navigation-side-bar flex-spacebetween-start">
           <div class="flex-center-spacebetween">
-          <div>
-            <a href="/" class="site-title-link hover">{website.siteTitle}</a>
-            <p class="site-tagline">{website.siteTagLine}</p>
+            <div>
+              <a href="/" class="site-title-link hover">{website.siteTitle}</a>
+              <p class="site-tagline">{website.siteTagLine}</p>
+            </div>
+            {#  <button onclick="window.open('/about#contactForm', '_self')"class="button outline-button mobile-contact-button" style="max-width: 100px;">Contact</button>  }
           </div>
-          <button onclick="window.open('/about#contactForm', '_self')"class="button outline-button mobile-contact-button" style="max-width: 100px;">Contact</button>
+          <header class="site-header">
+              <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+          </header>
+          <div class="site-footer full-screen-footer">
+              <div class="footer-socials">
+                <squarespace:block-field id="footerBlocks" columns="12" />
+                <a href="mailto:corey@coreywinowitch.com">corey@coreywinowitch.com</a>
+              </div>
+              <h6>Copyright &copy; Corey Winowitch 2023</h6>
+              <a id="de-tag" href="https://designelixir.studio/" target="_blank">Made with &hearts; by Design Elixr </a>
           </div>
-        <header class="site-header">
-            <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-        </header>
-        <footer class="site-footer full-screen-footer">
-            <squarespace:block-field id="footerBlocks" columns="12" />
-        </footer>
         </div>
 
       
@@ -66,8 +72,16 @@
       <!-- cms content injection point -->
       <main class="content-container" id="homepage-main" role="main" data-content-field="main-content">
        {squarespace.main-content}
-       <div class="mobile-footer">
-            <squarespace:block-field id="footerBlocks" columns="12" />
+       <div class="mobile-footer ">
+              <div class="footer-socials">
+                <squarespace:block-field id="footerBlocks" columns="12" />
+                <a href="mailto:corey@coreywinowitch.com">corey@coreywinowitch.com</a>
+              </div>
+              <div class="footer-mobile-copyright">
+                <h6>Copyright &copy; Corey Winowitch 2023</h6>
+                <a id="de-tag" href="https://designelixir.studio/" target="_blank">Made with &hearts; by Design Elixr </a>
+              </div>
+          </div>
         </div>
       </main>
       

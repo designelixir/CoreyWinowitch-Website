@@ -21,9 +21,9 @@
 {.repeated section items}
 
 <div class="project-grid-item flex-end-center hover" onclick="window.open('{fullUrl}', '_self')" style="background-image: url({assetUrl})">
-<h2 class="grid-title" data-content-field="title">
+<h3 class="grid-title" data-content-field="title">
       {title}
-    </h2>
+    </h3>
 </div>
 
 {.end}
